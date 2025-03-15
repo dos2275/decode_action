@@ -1,13 +1,6 @@
-//Sat Mar 15 2025 03:38:20 GMT+0000 (Coordinated Universal Time)
+//Sat Mar 15 2025 03:55:58 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var z = ["url"];
-function c(_0x1bb826) {
-  return G(_0x1bb826) || U(_0x1bb826) || s(_0x1bb826) || L();
-}
-function L() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
 function U(_0x1a97de) {
   if ("undefined" != typeof Symbol && null != _0x1a97de[Symbol.iterator] || null != _0x1a97de["@@iterator"]) {
     return Array.from(_0x1a97de);
@@ -560,8 +553,8 @@ function X(_0x89c9bb, _0x51dcc6) {
       _0x33ce9e,
       _0x361bdd,
       _0x33ce72 = [],
-      _0x3df3ae = !0,
-      _0x3460f5 = !1;
+      _0x3df3ae = true,
+      _0x3460f5 = false;
     try {
       if (_0x33ce9e = (_0x2a70f3 = _0x2a70f3.call(_0x89c9bb)).next, 0 === _0x51dcc6) {
         if (Object(_0x2a70f3) !== _0x2a70f3) {
@@ -2103,7 +2096,7 @@ var M = M || function (_0x2bce21) {
     random: function (_0x23160f) {
       var _0x3e08b2,
         _0x22575f = [],
-        _0x525ebc = !1;
+        _0x525ebc = false;
       try {
         _0x39688a();
         _0x525ebc = !0;
@@ -2341,7 +2334,7 @@ function Ct(_0x18b1e0, _0x338429) {
     }, {
       key: "setdata",
       value: function (_0x1e7fc2, _0x37a033) {
-        var _0x2022f6 = !1;
+        var _0x2022f6 = false;
         if (/^@/.test(_0x37a033)) {
           var _0x59b902 = p(/^@(.*?)\.(.*?)$/.exec(_0x37a033), 3),
             _0x546f0c = _0x59b902[1],
@@ -2676,17 +2669,12 @@ M.lib.Cipher || function () {
     _ENC_XFORM_MODE: 1,
     _DEC_XFORM_MODE: 2,
     _createHelper: function (_0x1cb35d) {
-      var _0x3d2d61 = {
-        OMQyv: function (_0x450f64, _0x2c1bed) {
-          return _0x450f64(_0x2c1bed);
-        }
-      };
       return {
         encrypt: function (_0x379115, _0x2b2d12, _0x2048aa) {
           return _0x11f9f4(_0x2b2d12).encrypt(_0x1cb35d, _0x379115, _0x2b2d12, _0x2048aa);
         },
         decrypt: function (_0x28c8fc, _0x3c6391, _0x3430c0) {
-          return _0x3d2d61.OMQyv(_0x11f9f4, _0x3c6391).decrypt(_0x1cb35d, _0x28c8fc, _0x3c6391, _0x3430c0);
+          return _0x11f9f4(_0x3c6391).decrypt(_0x1cb35d, _0x28c8fc, _0x3c6391, _0x3430c0);
         }
       };
     }
